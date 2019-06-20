@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.example.truckstatuskotlin.DataTruck.DataTruck
+import kotlinx.android.synthetic.main.fragment_check_pass.view.*
 
 
 import java.util.ArrayList
@@ -22,8 +23,8 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(saveInstanceState: Bundle?) {
         super.onActivityCreated(saveInstanceState)
 
-        val _historyBtn = view!!.findViewById<ImageView>(R.id.check_pass_history)
-        val _logoutText = view!!.findViewById<ImageView>(R.id.check_pass_logout)
+        val _historyBtn = view!!.check_pass_history
+        val _logoutText = view!!.check_pass_logout
 
         _historyBtn.setOnClickListener {
             activity!!.supportFragmentManager.beginTransaction().replace(R.id.main_view, TransactionFragment()).addToBackStack(null).commit()
