@@ -22,14 +22,8 @@ class MainFragment : Fragment() {
 
     override fun onActivityCreated(saveInstanceState: Bundle?) {
         super.onActivityCreated(saveInstanceState)
-
-        val _historyBtn = view!!.check_pass_history
         val _logoutText = view!!.check_pass_logout
 
-        _historyBtn.setOnClickListener {
-            activity!!.supportFragmentManager.beginTransaction().replace(R.id.main_view, TransactionFragment()).addToBackStack(null).commit()
-            Log.d("USER", "GOTO Transaction Page")
-        }
         _logoutText.setOnClickListener {
             activity!!.supportFragmentManager.beginTransaction().replace(R.id.main_view, LoginFragment()).addToBackStack(null).commit()
             Log.d("USER", "GOTO Login Page")

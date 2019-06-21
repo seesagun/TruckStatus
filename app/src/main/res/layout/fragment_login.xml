@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/background_login">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_login">
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -33,24 +33,19 @@
                 app:srcCompat="@drawable/pat_logo2"
                 tools:layout_editor_absoluteX="0dp" />
 
-            <TextView
-                android:id="@+id/check_pass_history"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:textColor="#231f20"
-                android:fontFamily="@font/thsarabunnew"
-                android:textStyle="bold"
-                android:text="@string/programName"
-                android:textSize="22dp"
-                android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="315dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/appname"
+                    tools:layout_editor_absoluteX="0dp" />
 
             <EditText
                 android:id="@+id/login_email"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/back"
+                android:background="@drawable/wback"
                 android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
                 android:ems="10"
                 android:hint="@string/user_name"
@@ -66,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/back"
+                android:background="@drawable/wback"
                 android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
                 android:ems="10"
                 android:fontFamily="@font/thsarabunnew"
@@ -83,11 +78,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
                 android:layout_marginTop="5dp">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/back"
+                    android:layout_height="50dp"
+                    android:background="@drawable/wback"
                     android:layout_weight="1">
                     <Spinner
                     android:id="@+id/spinner1"
@@ -98,8 +95,8 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/back"
+                    android:layout_height="50dp"
+                    android:background="@drawable/wback"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1">
                     <Spinner

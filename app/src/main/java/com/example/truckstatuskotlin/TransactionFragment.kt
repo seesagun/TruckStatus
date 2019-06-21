@@ -40,17 +40,11 @@ class TransactionFragment : Fragment() {
         )
         _dataTruckList.adapter = _dataTruckAdapter
 
-        val _mainMenuText = view!!.mainMenuText
         val _logoutText = view!!.check_pass_logout
         _logoutText.setOnClickListener(View.OnClickListener {
             activity!!.supportFragmentManager.beginTransaction().replace(R.id.main_view, LoginFragment())
                 .addToBackStack(null).commit()
             Log.d("USER", "GOTO Login Page")
-        })
-        _mainMenuText.setOnClickListener(View.OnClickListener {
-            activity!!.supportFragmentManager.beginTransaction().replace(R.id.main_view, MainFragment())
-                .addToBackStack(null).commit()
-            Log.d("USER", "GOTO MainMenu")
         })
 
 
