@@ -3,10 +3,6 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/thsarabunnew" />
-    <font
-        android:fontStyle="italic"
-        android:fontWeight="400"
-        android:font="@font/thsarabunnew_italic" />
+        android:font="@font/sbmodern" />
 
 </font-family>

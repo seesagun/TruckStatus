@@ -15,10 +15,10 @@
 	<string name="main_status_txt">Status:</string>
 	<string name="main_green">GREEN</string>
 	<string name="main_red">RED</string>
-	<string name="main_error">ERROR</string>
-	<string name="main_msg_green">Message: ไปจุดขนถ่าย</string>
-	<string name="main_msg_red">Message: ไปจุดตรวจ</string>
-	<string name="main_msg_error">Message: มีปัญหาบางอย่าง...</string>
+	<string name="main_error">ข้อความ</string>
+	<string name="main_msg_green">ไปจุดขนถ่าย</string>
+	<string name="main_msg_red">ไปจุดตรวจ</string>
+	<string name="main_msg_error">มีปัญหาบางอย่าง...</string>
 	<string name="pass_prompt">ด่าน</string>
 	<string name="gate_prompt">ประตู</string>
 

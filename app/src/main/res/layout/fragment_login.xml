@@ -7,8 +7,43 @@
     <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/background_login">
+            >
 
+        <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_asset3"
+                android:rotation="180"
+                tools:layout_editor_absoluteX="0dp" tools:ignore="MissingConstraints"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      app:layout_constraintTop_toTopOf="parent"
+                      android:paddingStart="10dp"
+                      android:layout_marginTop="60dp"
+                      tools:ignore="MissingConstraints">
+
+            <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:srcCompat="@drawable/companylogo"
+                    tools:layout_editor_absoluteX="0dp" tools:ignore="MissingConstraints"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      app:layout_constraintTop_toTopOf="parent"
+                      android:layout_marginVertical="105dp"
+                      android:gravity="center"
+                      tools:ignore="MissingConstraints">
+            <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="260dp"
+                    android:rotation="334"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/appname"
+                    tools:layout_editor_absoluteX="0dp" />
+        </LinearLayout>
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="0dp"
@@ -17,35 +52,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+		<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
+            android:layout_height="400dp"
+            android:gravity="end"
+            android:layout_marginTop="220dp"
             android:orientation="vertical"
-            android:padding="35dp">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="315dp"
-                android:layout_height="200dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/pat_logo2"
-                tools:layout_editor_absoluteX="0dp" />
-
-            <ImageView
-                    android:layout_width="315dp"
-                    android:layout_height="50dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/appname"
-                    tools:layout_editor_absoluteX="0dp" />
+            android:background="@drawable/ic_asset3"
+            android:paddingStart="180dp"
+            android:paddingEnd="10dp">
 
             <EditText
                 android:id="@+id/login_email"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/wback"
+                android:layout_height="40dp"
+                android:layout_marginTop="120dp"
+                android:background="@drawable/whitebtn"
                 android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
                 android:ems="10"
                 android:hint="@string/user_name"
@@ -59,9 +84,9 @@
             <EditText
                 android:id="@+id/login_password"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/wback"
+                android:background="@drawable/whitebtn"
                 android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
                 android:ems="10"
                 android:fontFamily="@font/thsarabunnew"
@@ -83,26 +108,26 @@
                 android:layout_marginTop="5dp">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/wback"
+                    android:layout_height="40dp"
+                    android:background="@drawable/whitebtn"
                     android:layout_weight="1">
                     <Spinner
                     android:id="@+id/spinner1"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:entries="@array/pass_arrays"
                     android:prompt="@string/pass_prompt" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/wback"
+                    android:layout_height="40dp"
+                    android:background="@drawable/whitebtn"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1">
                     <Spinner
                         android:id="@+id/spinner2"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="40dp"
                         android:entries="@array/gate_arrays"
                         android:prompt="@string/gate_prompt" />
                 </LinearLayout>
@@ -110,14 +135,14 @@
 
             <Button
                 android:id="@+id/login_button"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/blueback"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/whitestrokebtn"
                 android:fontFamily="@font/thsarabunnew"
                 android:text="LOGIN"
                 android:textStyle="bold"
-                android:textColor="@android:color/white"
+                android:textColor="#FFFFFF"
                 android:textFontWeight="500"
                 android:textSize="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -130,6 +155,7 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_begin="20dp" />
         </LinearLayout>
+		</LinearLayout>
     </ScrollView>
     </android.support.constraint.ConstraintLayout>
 
