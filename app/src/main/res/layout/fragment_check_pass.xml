@@ -6,7 +6,7 @@
     <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ECECEC">
+            android:background="@drawable/a1518508029">
 
         <LinearLayout
                 android:id="@+id/linearLayout1"
@@ -53,30 +53,33 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
                 android:orientation="vertical"
                 android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
                 android:layout_marginTop="85dp"
                 android:layout_height="wrap_content">
             <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="420dp"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:gravity="bottom"
-                    android:background="@drawable/main_card"
+                    android:gravity="start"
+                    android:background="@drawable/blueback"
                     android:padding="10dp">
                 <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="90dp"
                         android:orientation="vertical"
-                        android:padding="12dp"
-                        android:background="@drawable/mainmsgstroke">
+                        android:layout_marginTop="50sp"
+                        android:padding="12dp">
                     <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="30dp"
+                            android:layout_height="25dp"
                             android:fontFamily="@font/sbmodern"
-                            android:gravity="start"
+                            android:gravity="center_vertical"
                             android:inputType="text"
+                            android:layout_gravity="center_vertical"
                             android:text="@string/main_error"
-                            android:textColor="#3B47B8"
-                            android:textSize="20dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="23dp"
                             android:textStyle="bold"/>
                     <TextView
                             android:id="@+id/msg_status_main"
@@ -87,9 +90,9 @@
                             android:inputType="text"
                             android:layout_marginLeft="40dp"
                             android:padding="5dp"
-                            android:text="@string/main_msg_error"
-                            android:textColor="#8D8C8C"
-                            android:textSize="20dp"/>
+                            android:text="@string/main_msg_green"
+                            android:textColor="#DBDBDB"
+                            android:textSize="23dp"/>
                 </LinearLayout>
                 <LinearLayout
                         android:layout_width="match_parent"
@@ -103,22 +106,32 @@
                     <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:weightSum="20">
+                            android:orientation="vertical">
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:fontFamily="@font/sbmodern"
+                                android:gravity="start"
+                                android:inputType="text"
+                                android:paddingStart="12dp"
+                                android:layout_gravity="center_vertical"
+                                android:text="รหัสบาร์โค้ด"
+                                android:textColor="#FFFFFF"
+                                android:textSize="23dp"
+                                android:textStyle="bold"/>
                         <EditText
                                 android:id="@+id/barcode_id"
                                 android:layout_width="match_parent"
-                                android:layout_height="70dp"
+                                android:layout_height="60dp"
                                 android:text="@string/numberTKT"
                                 android:fontFamily="@font/sbmodern"
                                 android:textSize="25dp"
                                 android:paddingStart="20dp"
-                                android:textColor="#8D8C8C"
-                                android:layout_marginTop="6dp"
+                                android:textColor="#000000"
                                 android:paddingLeft="5dp"
                                 android:inputType="textEmailAddress"
                                 android:drawableLeft="@drawable/ic_barcode"
-                                android:background="@drawable/wback"
+                                android:background="@drawable/whitebtn"
                                 android:layout_weight="2"
                         />
 
@@ -126,26 +139,60 @@
                     <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:fontFamily="@font/sbmodern"
+                                android:gravity="start"
+                                android:inputType="text"
+                                android:paddingStart="12dp"
+                                android:layout_gravity="center_vertical"
+                                android:text="ทะเบียนรถ"
+                                android:textColor="#FFFFFF"
+                                android:textSize="23dp"
+                                android:textStyle="bold"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:gravity="center"
                             android:orientation="horizontal"
-                            android:layout_marginTop="10dp"
-                            android:weightSum="20">
+                            android:weightSum="6">
 
                         <EditText
-                                android:id="@+id/car_lc"
+                                android:id="@+id/car_lc_a"
                                 android:layout_width="match_parent"
-                                android:layout_height="70dp"
+                                android:layout_height="60dp"
+                                android:text="กง"
+                                android:inputType="textEmailAddress"
+                                android:fontFamily="@font/sbmodern"
+                                android:paddingStart="20dp"
+                                android:textColor="#000000"
+                                android:drawableLeft="@drawable/ic_lc"
+                                android:textSize="25dp"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/whitebtn"
+                                android:layout_weight="4"
+                        />
+                        <EditText
+                                android:id="@+id/car_lc_b"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
                                 android:text="@string/licensePlate"
                                 android:inputType="textEmailAddress"
                                 android:fontFamily="@font/sbmodern"
                                 android:paddingStart="20dp"
-                                android:textColor="#8D8C8C"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#000000"
                                 android:drawableLeft="@drawable/ic_lc"
                                 android:textSize="25dp"
                                 android:paddingLeft="5dp"
-                                android:background="@drawable/wback"
+                                android:background="@drawable/whitebtn"
                                 android:layout_weight="2"
                         />
+                    </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
                 </LinearLayout>
@@ -155,7 +202,7 @@
                         android:layout_height="wrap_content"
                         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
                         android:orientation="horizontal"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="30dp"
                         android:padding="3dp"
                         android:layout_marginBottom="20sp"
                         android:weightSum="2"
@@ -166,13 +213,13 @@
                             android:id="@+id/cancel_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="50dp"
-                            android:background="@drawable/bluestroke"
+                            android:background="@drawable/whitestrokebtn"
                             android:text="@string/cancelBtn"
                             android:fontFamily="@font/sbmodern"
                             android:textSize="25dp"
                             android:layout_weight="1"
                             android:textStyle="bold"
-                            android:textColor="#3b47b8"/>
+                            android:textColor="#CECACA"/>
                     <Button
                             android:id="@+id/submit_btn"
                             android:layout_width="wrap_content"

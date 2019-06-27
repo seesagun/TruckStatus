@@ -74,18 +74,20 @@
                         android:weightSum="2">
                     <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="15dp"
+                            android:layout_height="wrap_content"
                             android:text="ตั้งแต่วันที่"
                             android:inputType="text"
+                            android:textSize="20dp"
                             android:textColor="#FFFFFF"
                             android:fontFamily="@font/sbmodern"
                             android:layout_weight="1"
                     />
                     <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="15dp"
+                            android:layout_height="wrap_content"
                             android:text="ถึงวันที่"
                             android:inputType="text"
+                            android:textSize="20dp"
                             android:textColor="#FFFFFF"
                             android:fontFamily="@font/sbmodern"
                             android:layout_weight="1"
@@ -107,7 +109,7 @@
                         android:paddingLeft="5dp"
                         android:layout_marginRight="5dp"
                         android:gravity="center_vertical"
-                        android:background="@drawable/wback"
+                        android:background="@drawable/whiteback"
                         android:textColor="#000000"
                         android:textSize="20dp"
                         android:layout_weight="1"
@@ -122,7 +124,7 @@
                             android:paddingLeft="5dp"
                             android:layout_marginLeft="5dp"
                             android:gravity="center_vertical"
-                            android:background="@drawable/wback"
+                            android:background="@drawable/whiteback"
                             android:textColor="#000000"
                             android:textSize="20dp"
                             android:layout_weight="1"
@@ -136,8 +138,9 @@
                         android:weightSum="2">
                     <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="15dp"
+                            android:layout_height="wrap_content"
                             android:text="เลขที่ ทกท. 05"
+                            android:textSize="20dp"
                             android:inputType="text"
                             android:textColor="#FFFFFF"
                             android:fontFamily="@font/sbmodern"
@@ -145,8 +148,9 @@
                     />
                     <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="15dp"
+                            android:layout_height="wrap_content"
                             android:text="ทะเบียนรถ"
+                            android:textSize="20dp"
                             android:inputType="text"
                             android:textColor="#FFFFFF"
                             android:fontFamily="@font/sbmodern"
@@ -163,7 +167,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:paddingStart="15dp"
-                        android:text="01/01/2562"
+                        android:text="010698765"
                         android:inputType="text"
                         android:fontFamily="@font/sbmodern"
                         android:paddingLeft="5dp"
@@ -171,14 +175,14 @@
                         android:gravity="center_vertical"
                         android:textColor="#000000"
                         android:textSize="20sp"
-                        android:background="@drawable/wback"
+                        android:background="@drawable/whiteback"
                         android:layout_weight="1"
                         />
                     <TextView
                             android:layout_width="match_parent"
                             android:layout_height="45dp"
                             android:paddingStart="15dp"
-                            android:text="01/01/2562"
+                            android:text=""
                             android:inputType="text"
                             android:fontFamily="@font/sbmodern"
                             android:paddingLeft="5dp"
@@ -186,7 +190,7 @@
                             android:textColor="#000000"
                             android:textSize="20sp"
                             android:layout_marginLeft="5dp"
-                            android:background="@drawable/wback"
+                            android:background="@drawable/whiteback"
                             android:layout_weight="1"
                     />
                 </LinearLayout>
@@ -205,24 +209,26 @@
                         android:layout_height="40dp"
                         android:background="@drawable/whitestrokebtn"
                         android:text="@string/cancelBtn"
+                        android:textSize="20sp"
                         android:layout_marginTop="8dp"
                         android:layout_marginRight="10dp"
                         android:fontFamily="@font/sbmodern"
                         android:textStyle="bold"
                         android:layout_weight="1"
-                        android:textColor="@android:color/white" />
+                        android:textColor="#CECACA" />
                     <Button
                             android:id="@+id/submit_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
-                            android:background="@drawable/whitebtn"
+                            android:background="@drawable/submitback"
                             android:text="@string/submitBtn"
+                            android:textSize="20sp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="8dp"
                             android:fontFamily="@font/sbmodern"
                             android:textStyle="bold"
                             android:layout_weight="1"
-                            android:textColor="#3b47b8" />
+                            android:textColor="#FFFFFF" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -235,13 +241,13 @@
                 tools:ignore="MissingConstraints">
             <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="350dp"
+                    android:layout_height="325dp"
                     android:fillViewport="true">
                 <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:background="@drawable/whiteback">
+                        android:background="#FFFFFF">
                     <ListView
                             android:id="@+id/transaction_before_listing"
                             android:layout_width="match_parent"

@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#3a46b7</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorBeforeHeaderName">#8b8b8b</color>
+    <color name="textWhiteBox">#E0E0E0</color>
 </resources>
